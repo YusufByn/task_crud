@@ -1,0 +1,49 @@
+/* -------------------------------------------
+------------- CSS GLOBAL ---------------------
+---------------------------------------------- */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ------------------------------------------
+-------BOX QUI CONTIENNENT MES TACHES -------
+---------------------------------------------*/
+
+/* box "parent" elle est en display flex car si je le mets sur celui d'en bas les écritures vont faire nptq
+flex wrap pour que ce soit responsive */
+.tasksContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 20px 0;
+}
+
+/* box "enfant" je lui donne sa largeur (ce qui va lui donner une taille automatiquement
+margin de 10px partout sauf a gauche 43px pour center les box bien au millieu du main */
+.tasksContainer > article {
+    width: 25%;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px 10px 10px 43px;
+    background-color: rgb(245, 245, 247);
+}
+/* dans la box taskscontainer qui contient un article qui contient un h3 tu lui affectes ces attributs */
+.tasksContainer > article > h3 {
+    margin : 8px 0 8px 0;
+}
+
+/* dans la box taskscontainer qui contient un article qui contient des p donc du text */
+.tasksContainer > article > p {
+    margin: 4px 0 4px 0;
+}
+
+/* -----------------------------------------
+-------------- CSS SUR H2 ------------------ 
+--------------------------------------------*/
+
+/* dans ma section y'a un h2 et je lui attribut ca pour qu'il soit moin collé sur la gauche de la page
+ansi que au header */
+section > h2 {
+    margin: 10px 0 0 42px;
+}
