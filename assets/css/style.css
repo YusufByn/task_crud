@@ -6,6 +6,45 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* -------------------------------------------
+------------ FORMULAIRE CSS ------------------
+---------------------------------------------- */
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 30px 0 30px 70px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    padding: 20px;
+    border: 1px solid rgb(rgb(206, 206, 206));
+    border-radius: 10px;
+    background-color:rgb(105, 0, 49);
+    color: rgb(255, 255, 255);
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+}
+
+textarea {
+    padding: 10px;
+    margin: 10px;
+}
+
+select {
+    padding: 10px;
+    margin: 10px;
+}
+
+
 
 /* ------------------------------------------
 -------BOX QUI CONTIENNENT MES TACHES -------
@@ -26,7 +65,8 @@ margin de 10px partout sauf a gauche 43px pour center les box bien au millieu du
     padding: 20px;
     border-radius: 8px;
     margin: 10px 10px 10px 43px;
-    background-color: rgb(245, 245, 247);
+    background-color: rgb(105, 0, 49);
+    color: white;
 }
 /* dans la box taskscontainer qui contient un article qui contient un h3 tu lui affectes ces attributs */
 .tasksContainer > article > h3 {
