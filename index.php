@@ -22,8 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $formStatus = htmlspecialchars(trim($_POST["status_test"] ?? ""));
     $formPriority = htmlspecialchars(trim($_POST["priority"] ?? ""));
     $formDate = trim($_POST["due_date"] ?? "");
-
-    var_dump($formStatus); 
+ 
     // validation du titre
     if (empty($formTitle)) {
         $errors[] = "Le titre est obligatoire.";
